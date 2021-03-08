@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './Component/Home/Home';
 import NoMatch from './Component/NoMatch/NoMatch';
+import FriendDetail from './Component/FriendDetail/FriendDetail';
 
 
 
@@ -16,6 +17,9 @@ function App() {
       <Switch>
         <Route path="/home">
             <Home></Home>
+        </Route>
+        <Route path="/friend/:friendId">
+            <FriendDetail></FriendDetail>
         </Route>
         <Route exact path="/">
             <Home></Home>
